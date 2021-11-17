@@ -1,9 +1,14 @@
 body {
-  margin:0px;
+  margin-top: 5%;
   height: 1000px;
-  background: black;
+  background: rgb(0, 0, 0);
+  background-image: url(https://cdn.pixabay.com/photo/2016/11/23/15/31/man-1853545_960_720.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
 }
-
 
 .icon-bar {
   position: fixed;
@@ -17,57 +22,59 @@ body {
   display: block;
   text-align: center;
   padding: 16px;
-  transition: all 0.3s ease;
+  
   color: white;
   font-size: 20px;
-}
-
-.icon-bar a:hover {
-  background-color: rgb(255, 0, 0);
-}
-
-.facebook {
-  background: #000;
-  color: white;
-}
-
-.twitter {
-  background: #000;
-  color: white;
-}
-
-.github {
-  background: #000;
-  color: white;
 }
 
 .linkedin {
   background: #000;
   color: white;
+  animation: pulse 10000ms infinite;
+  border-radius: 50%;
 }
 
+.facebook {
+  background: #000;
+  color: white;
+  animation: pulse 10000ms infinite;
+  border-radius: 50%;
+}
 
+.twitter {
+  background: #000;
+  color: white;
+  animation: pulse 10000ms infinite;
+  border-radius: 50%;
+}
+
+.github {
+  background: #000;
+  color: white;
+  animation: pulse 10000ms infinite;
+  border-radius: 50%;
+}
 
 .text {
-  margin:auto;
-  background: #2f2f2f;
-  border: black solid 51px;
-
+  background: #00000000;
+  margin: 51px;
+  color: white;
 }
-
 
 /* The hero image */
 .hero-image {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/Portfolio/pics/amsterdam-g245f02a82-1920.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/Portfolio/pics/amsterdam-g245f02a82-1920.jpg");
+ 
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.39)),
+    url("/Portfolio/pics/fractal-g9552251aa-1920.jpg");
   /* Set a specific height */
-  height: 25%;
-  border: 51px black solid;
+  height: 15%;
+  margin: 0px;
   /* Position and center the image to scale nicely on all screens */
   background-position: center;
   background-repeat: no-repeat;
-  background-size:cover;
+  background-size: cover;
   position: relative;
+  background-attachment: fixed;
 }
 
 /* Place text in the middle of the image */
@@ -77,16 +84,14 @@ body {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   color: white;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  animation: shadows 2000ms infinite;
 }
 
 
-.some-page-wrapper {
-  margin: 15px;
-  background-color: red;
-}
+
 
 .row {
   display: flex;
@@ -98,19 +103,63 @@ body {
 .column {
   display: flex;
   flex-direction: column;
+ 
   flex-basis: 100%;
   flex: 1;
   text-align: center;
 }
 
 .column1 {
-  background-color: rgb(195, 195, 255);
+  background-color: rgba(102, 102, 102, 0.39);
   height: 500px;
-  border-right: black solid 25px;
+  margin: 1%;
+  
 }
 
 .column2 {
-  background-color: rgb(195, 195, 255);
+  background-color: rgba(102, 102, 102, 0.39);
   height: 500px;
-  border-left: black solid 25px;
+  margin: 1%;
+  
+}
+
+.profilepic {
+  float: right;
+  margin-top: 1.5%;
+  margin-right: 2%;
+  
+  animation: pic 10000ms;
+
+}
+
+
+@keyframes shadows {
+
+  
+  50% {text-shadow: 1px 1px 30px rgb(255, 255, 255);}
+  
+}
+
+
+
+
+
+@keyframes pulse {
+  0% {
+    background-color: rgba(0, 0, 0, 0);
+    
+  }
+
+50% {
+  background-color: rgb(255, 0, 0);
+}
+  
+  
+  
+  100% {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  
+
 }

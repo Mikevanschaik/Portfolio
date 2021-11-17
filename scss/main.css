@@ -1,7 +1,12 @@
 body {
-  margin: 0px;
+  margin-top: 5%;
   height: 1000px;
   background: black;
+  background-image: url(https://cdn.pixabay.com/photo/2016/11/23/15/31/man-1853545_960_720.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .icon-bar {
@@ -15,54 +20,61 @@ body {
   display: block;
   text-align: center;
   padding: 16px;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
   color: white;
   font-size: 20px;
-}
-
-.icon-bar a:hover {
-  background-color: red;
-}
-
-.facebook {
-  background: #000;
-  color: white;
-}
-
-.twitter {
-  background: #000;
-  color: white;
-}
-
-.github {
-  background: #000;
-  color: white;
 }
 
 .linkedin {
   background: #000;
   color: white;
+  -webkit-animation: pulse 10000ms infinite;
+          animation: pulse 10000ms infinite;
+  border-radius: 50%;
+}
+
+.facebook {
+  background: #000;
+  color: white;
+  -webkit-animation: pulse 10000ms infinite;
+          animation: pulse 10000ms infinite;
+  border-radius: 50%;
+}
+
+.twitter {
+  background: #000;
+  color: white;
+  -webkit-animation: pulse 10000ms infinite;
+          animation: pulse 10000ms infinite;
+  border-radius: 50%;
+}
+
+.github {
+  background: #000;
+  color: white;
+  -webkit-animation: pulse 10000ms infinite;
+          animation: pulse 10000ms infinite;
+  border-radius: 50%;
 }
 
 .text {
-  margin: auto;
-  background: #2f2f2f;
-  border: black solid 51px;
+  background: #00000000;
+  margin: 51px;
+  color: white;
 }
 
 /* The hero image */
 .hero-image {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/Portfolio/pics/amsterdam-g245f02a82-1920.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/Portfolio/pics/amsterdam-g245f02a82-1920.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.39))), url("/Portfolio/pics/fractal-g9552251aa-1920.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.39)), url("/Portfolio/pics/fractal-g9552251aa-1920.jpg");
   /* Set a specific height */
-  height: 25%;
-  border: 51px black solid;
+  height: 15%;
+  margin: 0px;
   /* Position and center the image to scale nicely on all screens */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  background-attachment: fixed;
 }
 
 /* Place text in the middle of the image */
@@ -75,11 +87,8 @@ body {
   transform: translate(-50%, -50%);
   color: white;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.some-page-wrapper {
-  margin: 15px;
-  background-color: red;
+  -webkit-animation: shadows 2000ms infinite;
+          animation: shadows 2000ms infinite;
 }
 
 .row {
@@ -112,14 +121,58 @@ body {
 }
 
 .column1 {
-  background-color: #c3c3ff;
+  background-color: rgba(102, 102, 102, 0.39);
   height: 500px;
-  border-right: black solid 25px;
+  margin: 1%;
 }
 
 .column2 {
-  background-color: #c3c3ff;
+  background-color: rgba(102, 102, 102, 0.39);
   height: 500px;
-  border-left: black solid 25px;
+  margin: 1%;
+}
+
+.profilepic {
+  float: right;
+  margin-top: 1.5%;
+  margin-right: 2%;
+  -webkit-animation: pic 10000ms;
+          animation: pic 10000ms;
+}
+
+@-webkit-keyframes shadows {
+  50% {
+    text-shadow: 1px 1px 30px white;
+  }
+}
+
+@keyframes shadows {
+  50% {
+    text-shadow: 1px 1px 30px white;
+  }
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  50% {
+    background-color: red;
+  }
+  100% {
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  50% {
+    background-color: red;
+  }
+  100% {
+    background-color: rgba(0, 0, 0, 0);
+  }
 }
 /*# sourceMappingURL=main.css.map */
