@@ -9,16 +9,20 @@
 
   <body>
 
+    <ul class="topnav">
+      <li><a class="active" href="#home">Home</a></li>
+      <li><a href="#aboutme">About me</a></li>
+      <li class="right"><a href="#mywork">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+      
+    </ul>
    
     
     
     
     
     <div class="hero-image">
-    <div class="profilepic">
-      <img src="/Portfolio/pics/Donut.jpg" alt="" style="width: 100px; height:100px;">
-    </div>
-      <div class="hero-text">
+    <div class="hero-text">
         <h1>Mike van Schaik</h1>
         <p>QA Tester in training</p>
         
@@ -30,23 +34,82 @@
       <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
       <a href="https://www.facebook.com/mike.vanschaik" class="facebook"><i class="fa fa-facebook"></i></a> 
       
-      <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
-      <a href="#" class="github"><i class="fa fa-github"></i></a> 
+      <a href="https://twitter.com/mikevanschaik87" class="twitter"><i class="fa fa-twitter"></i></a> 
+      <a href="https://github.com/Mikevanschaik" class="github"><i class="fa fa-github"></i></a> 
     </div>
-
+<div class="textbox" id="aboutme">
     <div class='text'>
-      <div class='row'>
-        <div class='column'>
-          <div class="column1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, eveniet. Blanditiis dolores nesciunt itaque id placeat, inventore quas numquam quos laboriosam officia neque. Provident iste neque laudantium, sapiente doloribus molestiae!
+      <h3>About me</h3>
+     Hi! my name is Mike, I am a visual QA tester in training, with a passion for sneakers, fashion, art and animals. 
+     I'm located in Leiden, the Netherlands and will be starting a traineeship at Mediamonks in may 2022. <br><br><br>
           </div>
-        </div>
-        <div class='column'>
-          <div class='column2'>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error molestias perspiciatis aperiam totam, consectetur eum, debitis ipsum deleniti, quidem voluptatem consequuntur eius. Nihil odit quis mollitia! Quo illum atque dolorum?
+        
+
+        <div id="mywork">
+          <div class='text'>
+            <h3>Projects</h3>
+
+            Coming soon...
+          <br><br><br>      
           </div>
-        </div>
+
+                <div class="container" id="contact">
+                  <h3 style="text-align: center;
+                  color: white;
+                  font-family: Verdana, Geneva, Tahoma, sans-serif;">Contact me</h3>
+                  <form action="email.php" method="post" name="contactform" style="margin-left: 2%; width:97%;" >
+  
+                    <p><label for="first">First Name *</label><br>
+                    <input maxlength="50" name="first_name" id="first" size="30" type="text" required placeholder="First Name"  /></p>
+                       
+                    <p><label for="last">Last Name *</label><br>
+                    <input maxlength="50" name="last_name"  id="last" size="30" type="text" required  placeholder="Last Name" /></p>
+                      
+                      
+                    
+                      
+                    <p><label for="emailadr">Email *</label><br>
+                    <input maxlength="80" name="email" id="emailadr" size="30" type="email"required  placeholder="you@example.com" /></p>
+                      
+                    
+                    <p><label for="msg">Message *</label><br>
+                    <textarea cols="25" maxlength="1000" id="msg" name="comments" rows="6" required placeholder="Tell us more..." ></textarea></p>
+                     
+                    <small>* Required</small>
+                    <p><input type="submit" value="Send Message" /></p>
+                     
+                    </form>
+                </div>
+
+              </div>
       </div>
     </div>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    
+    
+    <script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
     
     </body>
     </html> 
