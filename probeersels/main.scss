@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*
+{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+section {
+    height: 100vh;
+    width: 200vh;
+    overflow: hidden;
+    background: #000;
+
+}
+
+p{
+    position: relative;
+    font-size: 1.5em;
+    letter-spacing: -0,05em;
+    line-height: 0.7em;
+    background: url(https://cdn.pixabay.com/photo/2016/06/06/17/05/woman-1439909_960_720.jpg), url(https://cdn.pixabay.com/photo/2016/06/06/17/05/woman-1439909_960_720.jpg), url(https://cdn.pixabay.com/photo/2016/06/06/17/05/woman-1439909_960_720.jpg);
+    background-blend-mode: hard-light;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-clip: text;
+    color: transparent;
+}
