@@ -1,56 +1,16 @@
 body {
-  height: 3000px;
   height: 1000px;
   background: black;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
-body ul.topnav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background: #2b0070;
-  border: rgba(255, 255, 255, 0.5) solid 1px;
-}
-
-body ul.topnav li {
-  float: left;
-}
-
-body ul.topnav li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 0.7em 0.34rem;
-  text-decoration: none;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  border: solid rgba(255, 255, 255, 0.5) 0px;
-}
-
-body ul.topnav li a:hover {
-  background-color: #111;
-}
-
-body ul.topnav li.right {
-  float: left;
-}
-
-ul.topnav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
+body h3 {
+  text-shadow: #2b0070 1px 1px 30px;
 }
 
 .icon-bar {
   position: fixed;
   left: 3%;
-  top: 25%;
+  top: 17.5%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }
@@ -62,31 +22,7 @@ ul.topnav {
   color: white;
 }
 
-.linkedin {
-  background: #000;
-  color: white;
-  -webkit-animation: pulse 5000ms infinite;
-          animation: pulse 5000ms infinite;
-  border-radius: 50%;
-}
-
-.facebook {
-  background: #000;
-  color: white;
-  -webkit-animation: pulse 5000ms infinite;
-          animation: pulse 5000ms infinite;
-  border-radius: 50%;
-}
-
-.twitter {
-  background: #000;
-  color: white;
-  -webkit-animation: pulse 5000ms infinite;
-          animation: pulse 5000ms infinite;
-  border-radius: 50%;
-}
-
-.github {
+.icon-bar .icon {
   background: #000;
   color: white;
   -webkit-animation: pulse 5000ms infinite;
@@ -148,19 +84,15 @@ ul.topnav {
   border: rgba(255, 255, 255, 0.5) solid 1px;
 }
 
-h3 {
-  text-shadow: #2b0070 1px 1px 30px;
-}
-
 @-webkit-keyframes shadows {
   50% {
-    text-shadow: 1px 1px 30px white;
+    text-shadow: 1px 1px 30px #2b0070;
   }
 }
 
 @keyframes shadows {
   50% {
-    text-shadow: 1px 1px 30px white;
+    text-shadow: 1px 1px 30px #2b0070;
   }
 }
 
@@ -188,49 +120,6 @@ h3 {
   }
 }
 
-/* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-  width: 100%;
-  /* Full width */
-  padding: 0;
-  /* Some padding */
-  border: 1px solid black;
-  border-radius: 4px;
-  /* Rounded borders */
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  /* Make sure that padding and width stays in place */
-  margin: 0% 0% 0% 0%;
-  /* Add a top margin */
-  /* Bottom margin */
-  resize: vertical;
-  /* Allow the user to vertically resize the textarea (not horizontally) */
-  color: #270000;
-}
-
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-  background-color: #2b0070;
-  color: white;
-  margin: 1% 1% 1% 1%;
-  border: rgba(255, 255, 255, 0.5) solid 1px;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color: #ffffff;
-  color: black;
-}
-
-/* Add a background color and some padding around the form */
-.container {
-  margin-left: 12%;
-  background-color: #5e5b5b81;
-  width: 80%;
-  border: rgba(255, 255, 255, 0.5) solid 1px;
-}
-
 #myBtn {
   display: none;
   position: fixed;
@@ -249,10 +138,6 @@ input[type=submit]:hover {
           animation: pulse 5000ms infinite;
 }
 
-#myBtn:hover {
-  background-color: #555;
-}
-
 @media only screen and (min-width: 600px) {
   .text {
     font-size: 2vw;
@@ -269,7 +154,7 @@ input[type=submit]:hover {
   h3 {
     font-size: 2vw;
   }
-  input[type=submit] {
+  input[type="submit"] {
     -webkit-transform: scale(2);
             transform: scale(2);
     margin-left: 4.5%;

@@ -1,116 +1,44 @@
 @import "variables";
 
-
 body {
-  height: 3000px;
-
-
   
-  ul.topnav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background: $accentcolor;
-  border: $bordercolor solid 1px;
-  
-}
-
-ul.topnav li {float: left;}
-
-ul.topnav li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 0.7em 0.34rem;
-  text-decoration: none;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  
-  border: solid $bordercolor 0px;
-  
-}
-
-ul.topnav li a:hover{background-color: #111;}
-
-
-
-ul.topnav li.right {float: left;}
   height: 1000px;
   background: $primarycolor;
-  
-  
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  
-  
+  h3 {
+    text-shadow: $accentcolor 1px 1px 30px;
+  }
 }
-
-ul.topnav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
   
-}
-
-
-
-.icon-bar {
+ .icon-bar {
   position: fixed;
   left: 3%;
-  top: 25%;
+  top: 17.5%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-}
-
-.icon-bar a {
-  display: block;
+  & a {
+    display: block;
   text-align: center;
   padding: 10px;
-  
+
   color: rgb(255, 255, 255);
-  
-}
 
-.linkedin {
-  background: #000;
+  }
+
+  .icon {
+    background: #000;
   color: white;
   animation: pulse 5000ms infinite;
   border-radius: 50%;
-}
 
-.facebook {
-  background: #000;
-  color: white;
-  animation: pulse 5000ms infinite;
-  border-radius: 50%;
+  }
 }
-
-.twitter {
-  background: #000;
-  color: white;
-  animation: pulse 5000ms infinite;
-  border-radius: 50%;
-}
-
-.github {
-  background: #000;
-  color: white;
-  animation: pulse 5000ms infinite;
-  border-radius: 50%;
-}
-
 
 
 /* The hero image */
 .hero-image {
- 
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.39)),
-  url(../pics/black-skin-1652717_1920.jpg);
+    url(../pics/black-skin-1652717_1920.jpg);
   /* Set a specific height */
   height: 25%;
 
@@ -138,8 +66,6 @@ ul.topnav {
   font-size: 1em;
 }
 
-
-
 .textbox {
   background: url(../pics/amsterdam-g245f02a82-1920grey.jpg);
   background-repeat: no-repeat;
@@ -148,10 +74,7 @@ ul.topnav {
   height: 2000px;
   padding-top: 12%;
   font-size: 1em;
-  
-  
 }
-
 
 .text {
   width: 80%;
@@ -160,7 +83,7 @@ ul.topnav {
   margin-right: 12%;
   margin-bottom: 12%;
   text-shadow: rgb(5, 0, 0) 1px 1px 2px;
-  
+
   text-align: center;
   color: white;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -168,80 +91,25 @@ ul.topnav {
 }
 
 
-h3 {
-  text-shadow: $accentcolor 1px 1px 30px;
-}
-
 
 @keyframes shadows {
-
-  
-  50% {text-shadow: 1px 1px 30px rgb(255, 255, 255);}
-  
+  50% {
+    text-shadow: 1px 1px 30px $accentcolor;
+  }
 }
-
-
-
-
 
 @keyframes pulse {
   0% {
     background-color: rgba(0, 0, 0, 0);
-    
   }
 
-50% {
-  background-color: rgb(0, 0, 0);
-}
-  
-  
-  
+  50% {
+    background-color: rgb(0, 0, 0);
+  }
+
   100% {
     background-color: rgba(0, 0, 0, 0);
   }
-
-  
-
-}
-
-
-/* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-  width: 100%; /* Full width */
-  padding: 0; /* Some padding */ 
-  border: 1px solid rgb(0, 0, 0); 
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin: 0% 0% 0% 0%; /* Add a top margin */
-   /* Bottom margin */
-  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
-  color: rgb(39, 0, 0);
-}
-
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-  background-color: $accentcolor;
-  color: rgb(255, 255, 255);
-  margin: 1% 1% 1% 1%;
-  border: $bordercolor solid 1px;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-
-input[type=submit]:hover {
-  background-color: #ffffff;
-  color: black;
-}
-
-/* Add a background color and some padding around the form */
-.container {
-  margin-left: 12%;
-  
-  background-color:#5e5b5b81;
-   
-  width: 80%;
-  border: $bordercolor solid 1px;
 }
 
 #myBtn {
@@ -259,11 +127,9 @@ input[type=submit]:hover {
   padding: 15px;
   border-radius: 25px;
   animation: pulse 5000ms infinite;
+  
 }
 
-#myBtn:hover {
-  background-color: #555;
-}
 
 
 @media only screen and (min-width: 600px) {
@@ -277,8 +143,6 @@ input[type=submit]:hover {
 
   .icon-bar a {
     padding: 16px;
-    
-
   }
 
   .icon-bar {
@@ -287,13 +151,10 @@ input[type=submit]:hover {
 
   h3 {
     font-size: 2vw;
-    
   }
 
-  input[type=submit] {
-
+  input[type="submit"] {
     transform: scale(2);
     margin-left: 4.5%;
-    
   }
 }
