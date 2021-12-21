@@ -42,11 +42,13 @@
           </div>
         
 
-        <div id="mywork">
+        <div class="mywork" id="mywork">
           <div class='text'>
             <h3>Projects</h3>
+            
+            
 
-            Coming soon...
+           
           <br><br><br>      
           </div>
 
@@ -54,22 +56,22 @@
 
                 
     
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
 
     
     
     <script>
     
-    let mybutton = document.getElementById("myBtn");
+    let topbutton = document.getElementById("topBtn");
     
     // When the user scrolls down 20px from the top of the document, show the button
     window.onscroll = function() {scrollFunction()};
     
     function scrollFunction() {
       if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        mybutton.style.display = "block";
+        topbutton.style.display = "block";
       } else {
-        mybutton.style.display = "none";
+        topbutton.style.display = "none";
       }
     }
     

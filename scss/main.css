@@ -120,7 +120,7 @@ body h3 {
   }
 }
 
-#myBtn {
+#topBtn {
   display: none;
   position: fixed;
   bottom: 20px;
@@ -154,10 +154,13 @@ body h3 {
   h3 {
     font-size: 2vw;
   }
-  input[type="submit"] {
-    -webkit-transform: scale(2);
-            transform: scale(2);
-    margin-left: 4.5%;
-  }
+}
+
+.grid__container {
+  display: -ms-grid;
+  display: grid;
+  gap: 1rem;
+  -ms-grid-columns: 1fr,1fr;
+      grid-template-columns: 1fr,1fr;
 }
 /*# sourceMappingURL=main.css.map */

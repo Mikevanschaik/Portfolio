@@ -112,7 +112,7 @@ body {
   }
 }
 
-#myBtn {
+#topBtn {
   display: none;
   position: fixed;
   bottom: 20px;
@@ -153,8 +153,11 @@ body {
     font-size: 2vw;
   }
 
-  input[type="submit"] {
-    transform: scale(2);
-    margin-left: 4.5%;
-  }
+  
+}
+
+.grid__container {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr,1fr;
 }
